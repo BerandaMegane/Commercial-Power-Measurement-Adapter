@@ -18,8 +18,6 @@ Windows PC や Raspberry Pi へアダプタを USB 接続すると、仮想 COM 
 
 ## Circuit design 回路設計 
 
-* [CircuitDesign](./CircuitDesign/)
-
 回路図やLTSpice シミュレーションファイル (.asc) など、アダプタの回路設計に関するファイルを置いています。  
 作図ソフトウェアは BSch3V です。
 
@@ -27,22 +25,17 @@ BSch3V - https://www.suigyodo.com/online/schsoft.htm
 
 ## Board design 基板設計
 
-* [BoardDesign](./BoardDesign/)
-
-ユニバーサル基板（秋月電子通商 C 基板）で製作しました。部品の配置に関するファイルを置いています。画像に載っていない部品も多いので、あんまり参考にはなりません。
+ユニバーサル基板（秋月電子通商 C 基板）で製作しました。部品の配置に関するファイルを置いています。画像に載っていない部品も多いので、あんまり参考にはなりません。  
 作図ソフトウェアは marmelo です。
 
 marmelo - https://motchy99.blog.fc2.com/blog-entry-70.html
 
 ## Program ATmega328P マイコンプログラム
 
-* [Program](./Program/)
-
-制御マイコンには AVR ATmega328P を使用しており、Atmel Studio (Microchip Studio) による AVR GCC プロジェクトで製作しました。
-
+制御マイコンには AVR ATmega328P を使用しており、Atmel Studio (Microchip Studio) による AVR GCC プロジェクトで製作しました。  
 ビルド済みバイナリ (.elf, .hex) を使ってプログラムを書き込むときは、次を参考にしてください。
 
-1. [Releases](./releases/) からバイナリをダウンロードします。
+1. [Releases](https://github.com/BerandaMegane/Commercial-Power-Measurement-Adapter/releases) からバイナリをダウンロードします。
 1. AVR ライターを使用し、マイコンにバイナリを書き込みます。  
 AVR ライターは Arduino があれば自作することもできます。
 
@@ -50,8 +43,7 @@ Atmel Studio - https://www.microchip.com/en-us/tools-resources/develop/microchip
 
 ## STL 3Dプリンタ 筐体モデル
 
-* [STL](./STL/)
-  * [top.stl](./STL/top.stl)
-  * [bottom.stl](./STL/bottom.stl)
+* [top.stl](./STL/top.stl)
+* [bottom.stl](./STL/bottom.stl)
 
 3Dプリンタで作った筐体です。
