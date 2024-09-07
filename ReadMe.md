@@ -38,7 +38,13 @@ marmelo - https://motchy99.blog.fc2.com/blog-entry-70.html
 
 * [Program](./Program/)
 
-Atmel Studio (Microchip Studio) による AVR GCC プロジェクトです。
+制御マイコンには AVR ATmega328P を使用しており、Atmel Studio (Microchip Studio) による AVR GCC プロジェクトで製作しました。
+
+ビルド済みバイナリ (.elf, .hex) を使ってプログラムを書き込むときは、次を参考にしてください。
+
+1. [Releases](./releases/) からバイナリをダウンロードします。
+1. AVR ライターを使用し、マイコンにバイナリを書き込みます。  
+AVR ライターは Arduino があれば自作することもできます。
 
 Atmel Studio - https://www.microchip.com/en-us/tools-resources/develop/microchip-studio
 
