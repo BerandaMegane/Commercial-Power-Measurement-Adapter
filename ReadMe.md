@@ -9,12 +9,8 @@ Windows PC や Raspberry Pi へアダプタを USB 接続すると、仮想 COM 
 回路・マイコンプログラムは次のサイトを参考にしています。~~というかアレンジして作ってみた結果、劣化コピーになりました。~~  
 * ChaN氏 [ELM - 電圧周波数測定アダプタ](http://elm-chan.org/works/lvfm/report_j.html)
 
-回路設計のバージョンは2つあります。
-
-* ver1
-  * 製作したバージョンですが、修正したい点がいくつかあります。
-* ver2
-  * 修正バージョンですが、製作していません。
+Qiita にて解説しています。
+* Qiita - [電源周波数測定アダプタを真似して作ってみた](https://qiita.com/BerandaMegane/items/4fd927695e5ca32714c5)
 
 ## Circuit design 回路設計 
 
@@ -22,6 +18,13 @@ Windows PC や Raspberry Pi へアダプタを USB 接続すると、仮想 COM 
 作図ソフトウェアは BSch3V です。
 
 BSch3V - https://www.suigyodo.com/online/schsoft.htm
+
+回路設計のバージョンは2つあります。
+
+* ver1
+  * 製作したバージョンですが、修正したい点がいくつかあります。
+* ver2
+  * 修正バージョンですが、製作していません。
 
 ## Board design 基板設計
 
