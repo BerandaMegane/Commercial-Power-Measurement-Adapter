@@ -12,6 +12,8 @@ Windows PC や Raspberry Pi へアダプタを USB 接続すると、仮想 COM 
 Qiita にて解説しています。
 * Qiita - [電源周波数測定アダプタを真似して作ってみた](https://qiita.com/BerandaMegane/items/4fd927695e5ca32714c5)
 
+下は各ディレクトリの中身を解説しています。
+
 ## Circuit design 回路設計 
 
 回路図や LTSpice シミュレーションファイル (.asc) など、アダプタの回路設計に関するファイルを置いています。  
@@ -36,16 +38,24 @@ Qiita にて解説しています。
 
 ## Program ATmega328P マイコンプログラム
 
-制御マイコンには AVR ATmega328P を使用しており、動作クロック 20MHz で動作している前提でプログラミングされています。  
-Atmel Studio (Microchip Studio) による AVR GCC プロジェクトで製作しました。
+制御マイコンには AVR ATmega328P を使用しており、当初は、Atmel Studio (Microchip Studio) による AVR GCC プロジェクトで製作していましたが、後日 Rust (avr-hal) に書き直しています。  
+詳細は各ディレクトリの中を参考にしてください。
 
-ビルド済みバイナリ (.elf, .hex) を使ってプログラムを書き込むときは、次を参考にしてください。
+ビルド済みバイナリ (.elf) を使ってプログラムを書き込むときは、次を参考にしてください。
 
 1. [Releases](https://github.com/BerandaMegane/Commercial-Power-Measurement-Adapter/releases) からバイナリをダウンロードします。
 1. AVR ライターを使用し、マイコンにバイナリを書き込みます。  
 AVR ライターは Arduino があれば自作することもできます。
 
+なお、ビルド済みバイナリは、公開している回路基板で動作させる前提であり、その他の条件は次の通りです。
+* 動作クロック 20MHz
+  * ヒューズビット: FF. D9, FF  
+  https://www.engbedded.com/fusecalc?P=ATmega328P&V_LOW=0xFF&V_HIGH=0xD9&V_EXTENDED=0xFF&O_HEX=Apply+values
+* シリアル通信
+  * non-parity, stop-1bit, data-8bit, 19200bps 
+
 * Atmel Studio - https://www.microchip.com/en-us/tools-resources/develop/microchip-studio
+* avr-hal - https://github.com/Rahix/avr-hal
 
 ## STL 3Dプリンタ 筐体モデル
 
@@ -53,3 +63,6 @@ AVR ライターは Arduino があれば自作することもできます。
 
 * [top.stl](./STL/top.stl)
 * [bottom.stl](./STL/bottom.stl)
+
+## License
+This project is licensed under the MIT License, see the LICENSE file for details.
