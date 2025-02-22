@@ -12,7 +12,10 @@ Windows PC や Raspberry Pi へアダプタを USB 接続すると、仮想 COM 
 Qiita にて解説しています。
 * Qiita - [電源周波数測定アダプタを真似して作ってみた](https://qiita.com/BerandaMegane/items/4fd927695e5ca32714c5)
 
-下は各ディレクトリの中身を解説しています。
+このアダプタから電源周波数の情報を取得し、可視化するプログラムはこちらです。
+* [BerandaMegane/Power-Monitoring-Agent](https://github.com/BerandaMegane/Power-Monitoring-Agent)
+
+以降は各ディレクトリの中身を解説しています。
 
 ## Circuit design 回路設計 
 
